@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Register'),
+        title: const Text('Register'),
       ),
       body: _buildUI(),
     );
@@ -84,9 +84,8 @@ class _HomePageState extends State<HomePage> {
                       print("Form Data Validated & Saved");
                       print("$email , $password , $phone");
                     }
-                    ;
                   },
-                  child: Text('Register'),
+                  child: const Text('Register'),
                 ),
               ],
             )),
